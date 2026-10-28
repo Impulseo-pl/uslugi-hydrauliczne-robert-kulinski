@@ -17,96 +17,133 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ede9e2">
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/styles.css?v=6064bbc2">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css?v=20261028">
 </head>
 <body>
 
 <header class="nav">
-  <div class="wrap nav-inner">
+  <div class="nav-inner">
     <a class="brand brand-has-logo" href="index.html"><img class="brand-logo" src="img/logo.png" alt="Usługi hydrauliczne - Robert Kuliński" width="1040" height="235" decoding="async"></a>
-    <nav class="nav-links">
-      <a href="oferta.html">Oferta</a>
-      <a href="realizacje.html">Realizacje</a>
-      <a href="o-nas.html">O nas</a>
-      <a href="kontakt.html" class="active" aria-current="page">Kontakt</a>
-      <a href="tel:+48664097249" class="btn btn-accent">Zadzwoń +48 664 097 249</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    <a class="nav-phone" href="tel:+48664097249">+48 664 097 249 <span class="arr">→</span></a>
   </div>
 </header>
+<div class="menu" id="menu" aria-hidden="true">
+  <nav class="menu-main" aria-label="Menu główne">
+    <a href="index.html">Strona główna</a>
+    <a href="oferta.html">Oferta</a>
+    <a href="realizacje.html">Realizacje</a>
+    <a href="o-nas.html">O&nbsp;nas</a>
+    <a href="kontakt.html" aria-current="page">Kontakt</a>
+  </nav>
+  <div class="menu-side">
+    <div>
+      <h4>Usługi</h4>
+      <a href="oferta.html">Awarie i&nbsp;przecieki</a>
+      <a href="oferta.html">Udrażnianie rur i&nbsp;kanalizacji</a>
+      <a href="oferta.html">Wymiana i&nbsp;montaż kotłów</a>
+      <a href="oferta.html">Instalacje wod-kan</a>
+      <a href="oferta.html">Montaż łazienek</a>
+      <a href="oferta.html">Centralne ogrzewanie i&nbsp;grzejniki</a>
+    </div>
+    <div>
+      <h4>Kontakt</h4>
+      <a href="tel:+48664097249">+48 664 097 249</a>
+      <p>ul. Polna, 63-760 Chachalnia</p>
+      <p>Pon.-pt. 7:00-16:30, sob. 7:30-16:30</p>
+    </div>
+  </div>
+</div>
 
 <main>
-<section class="pagehead">
-  <img src="img/g9.jpg" alt="Usługi hydrauliczne - Robert Kuliński - Zapytaj o wycenę" width="1600" height="1068" decoding="async">
-  <div class="wrap">
-    <span class="eyebrow">Kontakt</span>
-    <h1>Zapytaj o wycenę</h1>
-    <p>Odpowiemy na pytania i przygotujemy wycenę.</p>
+<section class="hero-kw is-sub">
+  <img class="hk-img" src="img/g9.jpg" alt="Usługi hydrauliczne - Robert Kuliński - Zapytaj o wycenę" width="1600" height="1068" fetchpriority="high" decoding="async">
+  <div class="hk-copy">
+    <span class="label">Kontakt</span>
+    <h1 class="hk-title">Zapytaj o&nbsp;wycenę</h1>
+    <p class="hk-lead">Odpowiem na pytania i&nbsp;przygotuję wycenę.</p>
   </div>
 </section>
-<section>
+
+<section class="section">
   <div class="wrap contact-grid">
     <div class="reveal">
-      <span class="eyebrow">Dane kontaktowe</span>
-      <h2 style="margin:var(--space-4) 0 var(--space-6)">Usługi hydrauliczne - Robert Kuliński</h2>
       <div class="info-list">
-        <div class="info-row"><div class="ic"><svg class="ico-tel" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z" fill="currentColor"/></svg></div><div><div class="lbl">Telefon</div><a class="val" href="tel:+48664097249">+48 664 097 249</a></div></div>
-        <div class="info-row"><div class="ic"><svg class="ico-pin" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" stroke="currentColor" stroke-width="1.6" fill="none"/><circle cx="12" cy="9.5" r="2.4" fill="currentColor"/></svg></div><div><div class="lbl">Adres</div><div class="val">ul. Polna, 63-760 Chachalnia</div></div></div>
-        <div class="info-row"><div class="ic"><svg class="ico-clock" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.2" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3.2 1.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div><div><div class="lbl">Godziny</div><div class="val" style="font-weight:500">Pon.-pt. 7:00-16:30, sob. 7:30-16:30</div></div></div>
+        <div class="info-row"><div class="lbl">Telefon</div><a class="val" href="tel:+48664097249">+48 664 097 249</a></div>
+        <div class="info-row"><div class="lbl">Adres</div><div class="val">ul. Polna, 63-760 Chachalnia</div></div>
+        <div class="info-row"><div class="lbl">Godziny</div><div class="val">Pon.-pt. 7:00-16:30, sob. 7:30-16:30</div></div>
+        <div class="info-row"><div class="lbl">Dojazd</div><div class="val">Zduny i&nbsp;okolice</div></div>
       </div>
     </div>
-    <div class="reveal">
-      <div class="form">
-        <h3 style="margin-bottom:var(--space-4)">Najszybciej telefonicznie</h3>
-        <p class="muted" style="margin-bottom:var(--space-5)">Zadzwoń, opisz pomysł, a powiem, co i jak. Bez zobowiązań.</p>
-        <a href="tel:+48664097249" class="btn btn-accent" style="justify-content:center">Zadzwoń: +48 664 097 249 <span class="arr">→</span></a>
-      </div>
+    <div class="contact-call reveal">
+      <span class="label">Najszybciej telefonicznie</span>
+      <h3>Zadzwoń i&nbsp;opisz, co się dzieje</h3>
+      <p>Powiem, co i&nbsp;jak, i&nbsp;ile to potrwa. Bez zobowiązań.</p>
+      <a class="cta-big" href="tel:+48664097249">+48 664 097 249</a>
     </div>
   </div>
 </section>
-<section style="padding-top:0">
-  <div class="wrap reveal">
-    <iframe class="map" title="Usługi hydrauliczne - Robert Kuliński - Zduny" src="https://maps.google.com/maps?q=51.6437361%2C17.4282209&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<section style="padding:0">
+  <iframe class="map" title="Usługi hydrauliczne - Robert Kuliński - Zduny" src="https://maps.google.com/maps?q=51.6437361%2C17.4282209&amp;z=13&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="vlabel">Częste pytania</span>
+      <h2>Dobrze wiedzieć, zanim zadzwonisz.</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item"><summary>Ile to będzie kosztowało?</summary><p>Zależy, co się dzieje - dlatego wypytuję przez telefon i od razu podaję widełki. Ostateczną cenę znasz przed robotą, nie po niej.</p></details>
+      <details class="faq-item"><summary>Czy wycena jest płatna?</summary><p>Nie. Przyjazd i wycena w Zdunach i najbliższej okolicy są bezpłatne i do niczego nie zobowiązują.</p></details>
+      <details class="faq-item"><summary>Jak szybko przyjedziesz?</summary><p>Przy zalaniu liczy się każda godzina, więc przy awarii przestawiam grafik. Prace planowane umawiamy z kilkudniowym wyprzedzeniem.</p></details>
+      <details class="faq-item"><summary>Czy dostanę fakturę?</summary><p>Tak, na firmę albo na osobę prywatną. Dokument dostajesz od razu, a nie „wyślę później”.</p></details>
+      <details class="faq-item"><summary>Dojedziesz do mnie?</summary><p>Granicę wyznacza kalendarz, nie mapa. Przy większej robocie dojeżdżam dalej - zapytaj.</p></details>
+      <details class="faq-item"><summary>Co, jeśli po naprawie coś dalej nie gra?</summary><p>Wracam i sprawdzam. Moja wina - poprawiam za darmo; wyszło coś nowego - mówię wprost, co i za ile.</p></details>
+    </div>
   </div>
 </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <div class="name">Usługi hydrauliczne - Robert Kuliński</div>
-        <p>Od zatkanego odpływu po całą kotłownię. Ty mówisz, co się dzieje - ja mówię, ile i kiedy.</p>
-      </div>
-      <div class="foot-col">
-        <h4>Nawigacja</h4>
-        <a href="oferta.html">Oferta</a>
-        <a href="realizacje.html">Realizacje</a>
-        <a href="o-nas.html">O nas</a>
-        <a href="kontakt.html">Kontakt</a>
-      </div>
-      <div class="foot-col">
-        <h4>Kontakt</h4>
+    <div class="ft-top">
+      <div class="ft-list">
         <a href="tel:+48664097249">+48 664 097 249</a>
         <p>ul. Polna, 63-760 Chachalnia</p>
-        <a href="https://maps.google.com/?cid=11022516320210158322" target="_blank" rel="noopener">Jak dojechać →</a>
-      <div class="foot-soc">
-        <a class="soc" href="https://maps.google.com/?cid=11022516320210158322" target="_blank" rel="noopener" aria-label="Google - Usługi hydrauliczne - Robert Kuliński"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" fill="currentColor"/></svg></a>
+        <p class="sub">Obszar działania</p>
+        <p>Zduny i&nbsp;okolice</p>
+        <a href="oferta.html">Oferta</a>
+        <a href="realizacje.html">Realizacje</a>
+        <a href="o-nas.html">O&nbsp;nas</a>
+        <a href="kontakt.html">Kontakt</a>
       </div>
+      <div class="ft-cols">
+        <div><a href="https://maps.google.com/?cid=11022516320210158322" target="_blank" rel="noopener">Google <span class="arr">→</span></a><span>Opinie i&nbsp;dojazd</span>
+          <div class="foot-soc"><a class="soc" href="https://maps.google.com/?cid=11022516320210158322" target="_blank" rel="noopener" aria-label="Google - Usługi hydrauliczne - Robert Kuliński"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" fill="currentColor"/></svg></a></div></div>
+        <div><a href="kontakt.html">Wycena <span class="arr">→</span></a><span>Bezpłatnie, bez zobowiązań</span></div>
       </div>
     </div>
-    <div class="foot-bot">
-      <span>© 2026 Usługi hydrauliczne - Robert Kuliński</span>
-      <span>Projekt strony: <a class="foot-credit" href="https://impulseo.pl" target="_blank" rel="noopener">Impulseo</a></span>
+    <div class="ft-mid">
+      <div><a class="brand" href="index.html"><img class="brand-logo" src="img/logo.png" alt="Usługi hydrauliczne - Robert Kuliński" width="1040" height="235" loading="lazy" decoding="async"></a></div>
+      <div class="ft-hours">Pon.-pt. 7:00-16:30, sob. 7:30-16:30<small>Przy awarii najszybciej telefonicznie</small></div>
+    </div>
+    <div class="ft-bot">
+      <span>ul. Polna, 63-760 Chachalnia</span>
+      <span>© 2026 Usługi hydrauliczne - Robert Kuliński<br>Projekt strony: <a class="foot-credit" href="https://impulseo.pl" target="_blank" rel="noopener">Impulseo</a></span>
     </div>
   </div>
 </footer>
 <div class="sticky-call"><a class="sc-call" href="tel:+48664097249"><svg class="ico-tel" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z" fill="currentColor"/></svg> Zadzwoń</a><a class="sc-quote" href="kontakt.html">Umów termin</a></div>
 <div class="demo-wazne" data-do="2026-11-03" data-cykl="3" hidden><svg class="dw-ico" width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.6" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.2V12l3.3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="dw-txt"></span></div>
 
-<script src="assets/main.js"></script>
+<script src="assets/main.js?v=20261028"></script>
 </body>
 </html>
